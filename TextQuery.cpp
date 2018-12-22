@@ -1,4 +1,6 @@
 #include "TextQuery.h"
+#include "QueryResult.h"
+#include <sstream> // istrngstream
 
 // read input file and build the map
 TextQuery::TextQuery(std::ifstream &is) : file(new std::vector<std::string>){

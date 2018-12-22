@@ -1,13 +1,15 @@
 #ifndef TEXTQUERY_H
 #define TEXTQUERY_H
 
+#include <iostream>
 #include <fstream>
 #include <memory>
 #include <map>
 #include <vector>
+#include <string>
 #include <set>
 #include <algorithm> // find
-//#include "QueryResult.h"
+
 
 class QueryResult;
 

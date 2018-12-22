@@ -1,7 +1,6 @@
 #ifndef QUERYRESULT_H
 #define QUERYRESULT_H
 
-//#include <string>
 #include "TextQuery.h"
 
 class QueryResult {
