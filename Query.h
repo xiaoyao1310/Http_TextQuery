@@ -1,7 +1,7 @@
 #ifndef QUERY_H
 #define QUERY_H
 
-#include "Query_base.h"
+#include "WordQuery.h"
 
 class Query {
 	// there operator need access to the shared_ptr constructor
@@ -17,5 +17,7 @@ private:
 	Query(std::shared_ptr<Query_base> query): q(query) {}
 	std::shared_ptr<Query_base> q;
 };
+
+inline Query::Query(const std::string &s): q(new WordQuery(s)) {}
 
 #endif
