@@ -1,4 +1,4 @@
-objects =  main.o TextQuery.o QueryResult.o NotQuery.o OrQuery.o AndQuery.o
+objects =  main.o TextQuery.o QueryResult.o NotQuery.o OrQuery.o AndQuery.o connect.o
 
 edit: $(objects)
 	g++ -o edit $(objects)
@@ -15,7 +15,8 @@ AndQuery.o: AndQuery.cpp AndQuery.h BinaryQuery.h Query.h
 	g++ -c -std=c++14 AndQuery.cpp
 main.o: main.cpp Query.h QueryResult.h TextQuery.h
 	g++ -c -std=c++14 main.cpp
-
+connect.o: connect.cpp connect.h
+	g++ -c connect.cpp
 clean:
 	rm edit $(objects)
 

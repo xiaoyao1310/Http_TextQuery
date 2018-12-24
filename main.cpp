@@ -3,8 +3,11 @@
 #include "AndQuery.h"
 #include "OrQuery.h"
 #include "NotQuery.h"
+#include "connect.h"
 
 int main(int argc, char ** argv) {
+	connect(argv[1]); // host name, eg: blog.sina.com.cn
+	
 	std::string s;
 	std::cout << "input file name" << std::endl;
 	std::cin >> s;
